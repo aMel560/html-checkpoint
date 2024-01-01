@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--creation du head qui va contenir des meta data (du contenu qui n'apparaitra pas sur la page web)-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyPortfolio</title>
+    <!--titre de la page web-->
+  </head>
+  <!--fin de la section head du code html-->
+  <body>
+    <!--creation de la section body du code html qui va contenir tout ce qui apparaitra sur la page web-->
+    <header>
+      <!--creation de l'en tete de la page web-->
+      <section id="Home" style="background-color: antiquewhite">
+        <!--creation de la section de l'en tete-->
+        <h2>Amel Razini</h2>
+        <!--titre significatif dans l'en tete-->
+        <nav>
+          <!--creation d'une barre de navigation dans l'en tete qui va contenir une liste de liens internes-->
+
+          <ul>
+            <!--creation d'une liste de liens internes-->
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About me">About Me</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#My Resume">My Resume</a></li>
+            <li><a href="#Contact me">Contact Me</a></li>
+          </ul>
+          <!--fin de liste de liens interne-->
+        </nav>
+        <!--fin de la balise de navigation-->
+      </section>
+      <!--fin de la section de l'entete-->
+    </header>
+    <!--fin de l'entete-->
+
+    <main>
+      <!--Creation du main de la page web-->
+      <!--Creation de la premiere section du main la section About me-->
+      <section id="About me" style="background-color: antiquewhite">
+        <h2>About Me</h2>
+        <p>
+          Recent graduate in electronic engineering, I am actively seeking
+          professional opportunities that will allow me to build a career.<br />
+          Passionate about technology and highly motivated to contribute to the
+          development of innovative solutions,<br />
+          I am determined to acquire new skills and tackle technical challenges
+          to support the growth of your company.<br />
+          I am a diligent learner, ready to work collaboratively and fully
+          engage in exciting projects."
+        </p>
+      </section>
+      <section id="Projects" style="background-color: antiquewhite">
+        <!--Creation de la deuxieme section du main la section Projects-->
+        <h2>Projects</h2>
+        <table border="1" style="width: 50%">
+          <!--Creation d'un tableau de 2 colonnes qui comportera les projets ainsi que leurs description-->
+          <tr>
+            <th>Projects</th>
+            <!--Creation de la premiere ligne de la premiere colonne du tableau-->
+            <th>Description</th>
+            <!--Creation de la premiere ligne de la deuxieme colonne du tableau-->
+          </tr>
+
+          <tr>
+            <td>
+              <!--Creation de la deuxieme ligne de la premiere colonne du tableau-->
+              Design and implementation of a communication system based on LoRa
+              transmission technology
+            </td>
+            <td>
+              <!--Creation de la deuxieme ligne de la deuxieme colonne du tableau-->
+              The project involves designing a transmission system based on LoRa
+              technology that will enable the pipeline inspection robot to
+              transmit accurate and real-time data from inside the pipelines.
+              LoRa technology provides an ideal solution by enabling long-range
+              communication and low power consumption, suitable for these
+              demanding environments."
+              <image
+                src="./Images/Screenshot 2023-06-22 031812.png"
+                alt="project illustration"
+              ></image>
+              <!-- Integration d'une image descriptive a la deuxieme ligne de la premiere colonne-->
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Development of an IoT prototype to leverage the Zigbee protocol
+            </td>
+
+            <td>
+              <!--Creation de la troisieme ligne de la deuxieme colonne du tableau-->
+              The project involves leveraging the Zigbee protocol by
+              constructing an IoT prototype that can be scaled for broader use
+              through home automation.<br />
+              To achieve this, we have opted to employ various sensors that will
+              wirelessly transmit data via our XBee modules.<br />
+              This data can then be retrieved and utilized by another device.
+
+              <image
+                src="./Images/Screenshot 2023-12-30 213236.png"
+                alt="project illustration"
+              ></image>
+              <!-- Integration d'une image descriptive a la troisieme ligne de la deuxieme colonne-->
+            </td>
+          </tr>
+        </table>
+        <!-- fin de la balise tableau-->
+      </section>
+      <!--Fin de la section Projects-->
+
+      <!-- Creation de la quatrieme section du main la section My Resume qui contient un lien pour telecharger directement mon CV-->
+
+      <section id="My Resume" style="background-color: antiquewhite">
+        <h2>My Resume</h2>
+        <!-- titre de ma section-->
+        <a href="./Images/RaziniAmelCV (1).pdf" download="AmelRAZINI resume"
+          >download my resume
+        </a>
+        <!-- generer un lien qui permettra de telecharger mon CV-->
+        <audio controls>
+          <source
+            src="./Images/The Story of Marcus Aurelius 📜.mp3"
+            type="audio/mp3"
+          />
+          <!--Integration de l'audio-->
+        </audio>
+      </section>
+      <!-- fin de la section my resume-->
+    </main>
+    <!--fin du main-->
+    <footer>
+      <!-- creation du pied de page-->
+      <section id="Contact me" style="background-color: antiquewhite">
+        <!--creation de la section Contact me dans le pied de page-->
+        <h2>Contact Me</h2>
+        <!-- titre de ma section-->
+        <ul>
+          <!-- Creation d'une liste de lien dans le pied de page-->
+          <li>
+            <a href="https://mail.google.com/mail" target="_blank">Email</a>
+            <!-- creation d'un lien qui emmenera directement au mail en ouvrant une autre page et ceci grace a _blank de l'attribut target-->
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/amel-razini-b13175196"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <!--creation d'un lien qui emmenera directement au compte linkedin en ouvrant une autre page-->
+          </li>
+        </ul>
+        <!--fin de la liste -->
+      </section>
+      <!--fin de la section Contact me-->
+    </footer>
+    <!--fin du pied de page-->
+  </body>
+  <!--fin du body-->
+</html>
+<!--fin du code html-->

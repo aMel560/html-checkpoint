@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyPortfolio</title>
+    <link rel="stylesheet" href="checkpoint.css" />
     <!--titre de la page web-->
   </head>
   <!--fin de la section head du code html-->
@@ -12,15 +13,16 @@
     <!--creation de la section body du code html qui va contenir tout ce qui apparaitra sur la page web-->
     <header>
       <!--creation de l'en tete de la page web-->
-      <section id="Home" style="background-color: antiquewhite">
+      <section id="Home">
         <!--creation de la section de l'en tete-->
-        <h2>Amel Razini</h2>
+
         <!--titre significatif dans l'en tete-->
         <nav>
           <!--creation d'une barre de navigation dans l'en tete qui va contenir une liste de liens internes-->
 
           <ul>
             <!--creation d'une liste de liens internes-->
+            <li><h2>Amel Razini</h2></li>
             <li><a href="#Home">Home</a></li>
             <li><a href="#About me">About Me</a></li>
             <li><a href="#Projects">Projects</a></li>
@@ -29,6 +31,7 @@
           </ul>
           <!--fin de liste de liens interne-->
         </nav>
+
         <!--fin de la balise de navigation-->
       </section>
       <!--fin de la section de l'entete-->
@@ -38,7 +41,7 @@
     <main>
       <!--Creation du main de la page web-->
       <!--Creation de la premiere section du main la section About me-->
-      <section id="About me" style="background-color: antiquewhite">
+      <section id="Aboutme">
         <h2>About Me</h2>
         <p>
           Recent graduate in electronic engineering, I am actively seeking
@@ -51,88 +54,110 @@
           engage in exciting projects."
         </p>
       </section>
-      <section id="Projects" style="background-color: antiquewhite">
+      <section id="Projects">
         <!--Creation de la deuxieme section du main la section Projects-->
         <h2>Projects</h2>
-        <table border="1" style="width: 50%">
-          <!--Creation d'un tableau de 2 colonnes qui comportera les projets ainsi que leurs description-->
-          <tr>
-            <th>Projects</th>
-            <!--Creation de la premiere ligne de la premiere colonne du tableau-->
-            <th>Description</th>
-            <!--Creation de la premiere ligne de la deuxieme colonne du tableau-->
-          </tr>
+        <div id="div1">
+          <table border="1" style="width: 50%">
+            <!--Creation d'un tableau de 2 colonnes qui comportera les projets ainsi que leurs description-->
+            <tr>
+              <th>Projects</th>
+              <!--Creation de la premiere ligne de la premiere colonne du tableau-->
+              <th>Description</th>
+              <!--Creation de la premiere ligne de la deuxieme colonne du tableau-->
+            </tr>
 
-          <tr>
-            <td>
-              <!--Creation de la deuxieme ligne de la premiere colonne du tableau-->
-              Design and implementation of a communication system based on LoRa
-              transmission technology
-            </td>
-            <td>
-              <!--Creation de la deuxieme ligne de la deuxieme colonne du tableau-->
-              The project involves designing a transmission system based on LoRa
-              technology that will enable the pipeline inspection robot to
-              transmit accurate and real-time data from inside the pipelines.
-              LoRa technology provides an ideal solution by enabling long-range
-              communication and low power consumption, suitable for these
-              demanding environments."
-              <image
+            <tr>
+              <td>
+                <!--Creation de la deuxieme ligne de la premiere colonne du tableau-->
+                Design and implementation of a communication system based on
+                LoRa transmission technology
+              </td>
+              <td>
+                <!--Creation de la deuxieme ligne de la deuxieme colonne du tableau-->
+                The project involves designing a transmission system based on
+                LoRa technology that will enable the pipeline inspection robot
+                to transmit accurate and real-time data from inside the
+                pipelines. LoRa technology provides an ideal solution by
+                enabling long-range communication and low power consumption,
+                suitable for these demanding environments."
+                <!--<image
                 src="./Images/Screenshot 2023-06-22 031812.png"
                 alt="project illustration"
-              ></image>
-              <!-- Integration d'une image descriptive a la deuxieme ligne de la premiere colonne-->
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Development of an IoT prototype to leverage the Zigbee protocol
-            </td>
+              ></image>-->
+                <!-- Integration d'une image descriptive a la deuxieme ligne de la premiere colonne-->
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Development of an IoT prototype to leverage the Zigbee protocol
+              </td>
 
-            <td>
-              <!--Creation de la troisieme ligne de la deuxieme colonne du tableau-->
-              The project involves leveraging the Zigbee protocol by
-              constructing an IoT prototype that can be scaled for broader use
-              through home automation.<br />
-              To achieve this, we have opted to employ various sensors that will
-              wirelessly transmit data via our XBee modules.<br />
-              This data can then be retrieved and utilized by another device.
+              <td>
+                <!--Creation de la troisieme ligne de la deuxieme colonne du tableau-->
+                The project involves leveraging the Zigbee protocol by
+                constructing an IoT prototype that can be scaled for broader use
+                through home automation.<br />
+                To achieve this, we have opted to employ various sensors that
+                will wirelessly transmit data via our XBee modules.<br />
+                This data can then be retrieved and utilized by another device.
 
-              <image
+                <!--<image
                 src="./Images/Screenshot 2023-12-30 213236.png"
                 alt="project illustration"
-              ></image>
-              <!-- Integration d'une image descriptive a la troisieme ligne de la deuxieme colonne-->
-            </td>
-          </tr>
-        </table>
-        <!-- fin de la balise tableau-->
+              ></image>-->
+                <!-- Integration d'une image descriptive a la troisieme ligne de la deuxieme colonne-->
+              </td>
+            </tr>
+          </table>
+          <!-- fin de la balise tableau-->
+        </div>
+        <div id="div2">
+          <div id="div21">
+            <image
+              src="./Images/Screenshot 2023-06-22 031812.png"
+              alt="project illustration"
+            ></image>
+            <h3>Projet 1</h3>
+          </div>
+
+          <div id="div22">
+            <image
+              src="./Images/Screenshot 2023-12-30 213236.png"
+              alt="project illustration"
+            >
+            </image>
+            <h3>Projet 2</h3>
+          </div>
+        </div>
       </section>
       <!--Fin de la section Projects-->
 
       <!-- Creation de la quatrieme section du main la section My Resume qui contient un lien pour telecharger directement mon CV-->
 
-      <section id="My Resume" style="background-color: antiquewhite">
+      <section id="MyResume">
         <h2>My Resume</h2>
         <!-- titre de ma section-->
-        <a href="./Images/RaziniAmelCV (1).pdf" download="AmelRAZINI resume"
-          >download my resume
-        </a>
-        <!-- generer un lien qui permettra de telecharger mon CV-->
-        <audio controls>
-          <source
-            src="./Images/The Story of Marcus Aurelius 📜.mp3"
-            type="audio/mp3"
-          />
-          <!--Integration de l'audio-->
-        </audio>
+        <div id="div3">
+          <a href="./Images/RaziniAmelCV (1).pdf" download="AmelRAZINI resume"
+            >download my resume
+          </a>
+          <!-- generer un lien qui permettra de telecharger mon CV-->
+          <audio controls>
+            <source
+              src="./Images/The Story of Marcus Aurelius 📜.mp3"
+              type="audio/mp3"
+            />
+            <!--Integration de l'audio-->
+          </audio>
+        </div>
       </section>
       <!-- fin de la section my resume-->
     </main>
     <!--fin du main-->
     <footer>
       <!-- creation du pied de page-->
-      <section id="Contact me" style="background-color: antiquewhite">
+      <section id="Contactme">
         <!--creation de la section Contact me dans le pied de page-->
         <h2>Contact Me</h2>
         <!-- titre de ma section-->
@@ -160,3 +185,8 @@
   <!--fin du body-->
 </html>
 <!--fin du code html-->
+
+<!--<image
+                src="./Images/Screenshot 2023-06-22 031812.png"
+                alt="project illustration"
+              ></image>-->

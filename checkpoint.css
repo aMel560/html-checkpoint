@@ -1,0 +1,81 @@
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#Home {
+  display: flex;
+  flex-direction: column;
+}
+#Home > h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+#Aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Aboutme > h2 {
+  text-align: center;
+}
+#Aboutme > p {
+  text-align: center;
+}
+#div1 {
+  display: flex;
+  justify-content: center;
+}
+#Projects {
+  text-align: center;
+}
+#div1 {
+  display: flex;
+  justify-content: center;
+}
+#div2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 200px;
+  align-items: center;
+  margin-top: 50px;
+}
+#div21 > img {
+  height: 200px;
+  width: 250px;
+}
+#div22 > img {
+  height: 200px;
+  width: 250px;
+}
+#div3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#MyResume {
+  text-align: center;
+}
+#Contactme > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+#Contactme > h2 {
+  text-align: center;
+}
+body {
+  font-family: Roboto;
+}
